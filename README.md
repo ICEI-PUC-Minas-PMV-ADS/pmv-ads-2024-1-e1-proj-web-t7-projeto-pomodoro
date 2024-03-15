@@ -1,48 +1,48 @@
-# Título do Projeto
+# Project Title
 
-`CURSO`
+`COURSE`
 
-`DISCIPLINA`
+`DISCIPLINE`
 
-`SEMESTRE`
+`SEMESTER`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+Briefly describe, in one or two paragraphs, the project developed.
 
-## Integrantes
+## Integrants
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Rafael de Almeida Chaia Toledo
+* Bruno Monteiro Lima
+* Felipe de Souza Montes
+* Heitor Santos Alves
+* Pablo de Araujo Santo
+* Full name of student 6
 
-## Orientador
+## Advisor
 
-* Nome completo do professor
+* Teacher's full name
 
-# Documentação
+# Documentation
 
 <ol>
-<li><a href="documentos/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
-<li><a href="documentos/02-Especificação do Projeto.md"> Especificação do Projeto</a></li>
-<li><a href="documentos/03-Metodologia.md"> Metodologia</a></li>
-<li><a href="documentos/04-Projeto de Interface.md"> Projeto de Interface</a></li>
-<li><a href="documentos/05-Template padrão da Aplicação.md"> Template padrão da Aplicação</a></li>
-<li><a href="documentos/06-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
-<li><a href="documentos/07-Plano de Testes de Software.md"> Plano de Testes de Software</a></li>
-<li><a href="documentos/08-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
-<li><a href="documentos/09-Referências.md"> Referências Bibliográficas</a></li>
+<li><a href="documents/01-Context Documentation.md"> Context Documentation</a></li>
+<li><a href="documents/02-Project Specification.md"> Project Specification</a></li>
+<li><a href="documents/03-Methodology.md"> Methodology</a></li>
+<li><a href="documents/04-Interface.md Project"> Interface Design</a></li>
+<li><a href="documents/05-Template Application standard.md"> Standard Application Template</a></li>
+<li><a href="documents/06-Programming Functionalities.md"> Functionality Programming</a></li>
+<li><a href="documents/07-Software Test Plan.md"> Software Testing Plan</a></li>
+<li><a href="documents/08-Software Test Record.md"> Software Testing Registration</a></li>
+<li><a href="documents/09-References.md"> Bibliographic References</a></li>
 </ol>
 
-# Hospedagem
+# Hosting
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+* Enter the public email address of access to the published content. 
 
-# Código-Fonte
+# Source Code
 
-* <a href="codigo-fonte/README.md">Código Fonte</a>
+* <a href="source code/README.md">Source Code</a>
 
-# Apresentação
+# Presentation
 
-* <a href="apresentacao/README.md">Apresentação do Projeto</a>
+* <a href="presentation/README.md">Project Presentation</a>

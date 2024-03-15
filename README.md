@@ -15,7 +15,8 @@ Briefly describe, in one or two paragraphs, the project developed.
 * Felipe de Souza Montes
 * Heitor Santos Alves
 * Pablo de Araujo Santo
-* Full name of student 6
+* Raynan Fernandes Castro Silva Rodrigues
+* Daniel de Paulo Oliveira
 
 ## Advisor
 

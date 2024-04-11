@@ -1,6 +1,8 @@
 # Introdução
 
-O projeto “Pomodoro” é um site desenvolvido para auxiliar estudantes a organizarem e manterem o foco durante os estudos. Ele oferece um cronômetro baseado no método Pomodoro para gerenciar o tempo de estudo e pausas, além de um planejamento do seu tempo de estudo. O projeto “Pomodoro” visa tornar o processo de estudo mais eficiente e agradável.
+O projeto “Pomodoro” é um site desenvolvido para auxiliar estudantes a organizarem e manterem o foco durante os estudos. Ele oferece um cronômetro baseado no método Pomodoro para gerenciar o tempo de estudo e pausas, além de um planejamento do seu tempo de estudo. 
+
+O projeto “Pomodoro” visa tornar o processo de estudo mais eficiente e agradável.
 
 ## Problema
 

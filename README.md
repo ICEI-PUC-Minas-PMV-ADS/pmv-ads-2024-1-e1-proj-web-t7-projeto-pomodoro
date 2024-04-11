@@ -34,14 +34,11 @@ Utilizando o metodo pomodoro e disponibilizando musicas no estilo LO-FI (opciona
 <li><a href="documents/09-References.md"> Bibliographic References</a></li>
 </ol>
 
-# Hosting
 
-* Enter the public email address of access to the published content. 
+# Código
 
-# Source Code
+* <a href="source code/README.md">Código Fonte</a>
 
-* <a href="source code/README.md">Source Code</a>
-
-# Presentation
+# Apresentação
 
 * <a href="presentation/README.md">Project Presentation</a>

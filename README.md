@@ -1,14 +1,12 @@
 # Pomodoro
 
-`COURSE`
+`ANALISE E DESENVOLVIMENTO DE SISTEMA`
 
-`DISCIPLINE`
+`Eixo- 01`
 
-`SEMESTER`
+Utilizando o metodo pomodoro e disponibilizando musicas no estilo LO-FI (opcional), o projeto tem como objetivo tornar os picos de concentraçäo mais produtivos e as horas de estudo mais leves.
 
-Briefly describe, in one or two paragraphs, the project developed.
-
-## Integrants
+## Integrantes
 
 * Rafael de Almeida Chaia Toledo
 * Bruno Monteiro Lima
@@ -18,11 +16,11 @@ Briefly describe, in one or two paragraphs, the project developed.
 * Raynan Fernandes Castro Silva Rodrigues
 * Daniel de Paulo Oliveira
 
-## Advisor
+## Orientador
 
-* Teacher's full name
+* Professor(a): Carlos Alberto
 
-# Documentation
+# Documentação
 
 <ol>
 <li><a href="documents/01-Context Documentation.md"> Context Documentation</a></li>

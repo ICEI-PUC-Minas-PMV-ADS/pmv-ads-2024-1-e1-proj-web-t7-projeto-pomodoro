@@ -18,11 +18,6 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Equipe de Desenvolvimento: Rafael de Almeida Chaia Toledo, Bruno Monteiro Lima, Felipe de Souza Montes, Heitor Santos Alves, Pablo de Araujo de Santo, Raynan Fernandes Castro Silva Rodrigues, Daniel de Paulo de Oliveira
 - Equipe de Design: Rafael de Almeida Chaia Toledo, Raynan Fernandes Castro Silva Rodrigues
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
 ### Processo
 
 [Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]

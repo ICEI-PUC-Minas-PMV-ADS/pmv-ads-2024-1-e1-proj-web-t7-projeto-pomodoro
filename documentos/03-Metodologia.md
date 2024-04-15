@@ -51,5 +51,5 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/blob/main/README.md                           |
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/blob/main/documentos/01-Documenta%C3%A7%C3%A3o%20de%20Contexto.md                            |
 | Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
+| Gerenciamento do Projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1023/views/1                            |
 

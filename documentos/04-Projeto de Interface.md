@@ -5,7 +5,7 @@
 
 User flow (User Flow) is a technique that allows the developer to map all user navigation flow in the application. This technique works to align the paths and possible actions that the user can do together with the members of your team.
 
-![Flow Chart](documents/img/flowchart.png)
+![Flow Chart](img/flowchart.png)
 
 ## Prototype
 

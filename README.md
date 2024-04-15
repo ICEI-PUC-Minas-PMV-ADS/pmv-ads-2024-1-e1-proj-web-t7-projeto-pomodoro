@@ -17,7 +17,7 @@ O projeto "Pomodoro" visa tornar o processo de estudo mais eficiente e agradáve
 * Felipe de Souza Montes
 * Heitor Santos Alves
 * Pablo de Araujo de Santo
-* Raynan Fernandes Castro Silva Rodrigues
+* Raynan Fernandes Castro Silva Rodrigues 
 * Daniel de Paulo de Oliveira
 
 ## Orientador
@@ -40,7 +40,7 @@ O projeto "Pomodoro" visa tornar o processo de estudo mais eficiente e agradáve
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+
 
 # Código-Fonte
 

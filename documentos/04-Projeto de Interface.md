@@ -1,30 +1,30 @@
 
-# Projeto de Interface
+# Design Interface
 
-## User Flow
+## Flow User's
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+User flow (User Flow) is a technique that allows the developer to map all user navigation flow in the application. This technique works to align the paths and possible actions that the user can do together with the members of your team.
 
-![Flow Chart](documentos/img/flowchart.png)
+![Flow Chart](img/flowchart.png)
 
-## Protótipo
+## Prototype
 
-Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas de validar uma ideia, conceito ou funcionalidade. Isso permite a interação, avaliação, modificação e aprovação das principais características de uma interface antes de entrar na fase de desenvolvimento. Leia o artigo [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
+Developing a prototype emerges as one of the most agile and cost-effective ways to validate an idea, concept or functionality. This allows interaction, evaluation, modification and approval of the main features of an interface before entering the development phase. Read article [Prototypes: low, medium or high fidelity?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
 
-### Protótipo de baixa fidelidade
+### Low fidelity prototype
 
-Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
+Low fidelity prototypes present in a simplified way the interface design and the relationship between its pages, allowing evolution of the solution proposal. In this project, we will use them to support the validation of requirements and make changes to them, if necessary, for less impact on the coding of the application.
 
-[Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
+[Develop the main graphical interfaces of the application so that the functional requirements are contemplated in the proposed screens.]
 
-[Adicione aqui as telas da sua aplicação com seus devidos títulos.] 
+[Add here the screens of your application with their proper titles.] 
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
->- Ferramentas:
+> **Useful Links**:
+> - [Prototypes vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
+>- Tools:
 >> - [Pencil](https://pencil.evolus.vn/)
 >> - [MarvelApp](https://marvelapp.com/)
->> - [Figma](https://www.figma.com/)
+>> - [Phigma](https://www.figma.com/)
 
 
 

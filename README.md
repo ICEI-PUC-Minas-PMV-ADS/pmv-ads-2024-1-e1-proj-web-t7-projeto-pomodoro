@@ -1,48 +1,51 @@
-# Project Title
+# Pomodoro
 
-`COURSE`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINE`
+`Projeto Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTER`
+`Eixo 01`
 
-Briefly describe, in one or two paragraphs, the project developed.
+O projeto "Pomodoro" é um site desenvolvido para auxiliar estudantes a organizarem e manterem o foco durante os estudos. Ele oferece um cronômetro baseado no método Pomodoro para gerenciar o tempo de estudo e pausas, além de um planejamento do seu tempo de estudo.
 
-## Integrants
+O projeto "Pomodoro" visa tornar o processo de estudo mais eficiente e agradável.
+
+## Integrantes
 
 * Rafael de Almeida Chaia Toledo
 * Bruno Monteiro Lima
 * Felipe de Souza Montes
 * Heitor Santos Alves
-* Pablo de Araujo Santo
-* Full name of student 6
+* Pablo de Araujo de Santo
+* Raynan Fernandes Castro Silva Rodrigues 
+* Daniel de Paulo de Oliveira
 
-## Advisor
+## Orientador
 
-* Teacher's full name
+* Professor(a): Carlos Alberto
 
-# Documentation
+# Documentação
 
 <ol>
-<li><a href="documents/01-Context Documentation.md"> Context Documentation</a></li>
-<li><a href="documents/02-Project Specification.md"> Project Specification</a></li>
-<li><a href="documents/03-Methodology.md"> Methodology</a></li>
-<li><a href="documents/04-Interface.md Project"> Interface Design</a></li>
-<li><a href="documents/05-Template Application standard.md"> Standard Application Template</a></li>
-<li><a href="documents/06-Programming Functionalities.md"> Functionality Programming</a></li>
-<li><a href="documents/07-Software Test Plan.md"> Software Testing Plan</a></li>
-<li><a href="documents/08-Software Test Record.md"> Software Testing Registration</a></li>
-<li><a href="documents/09-References.md"> Bibliographic References</a></li>
+<li><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/blob/main/documentos/01-Documenta%C3%A7%C3%A3o%20de%20Contexto.md"> Documentação de Contexto</a></li>
+<li><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/blob/main/documentos/02-Especifica%C3%A7%C3%A3o%20do%20Projeto.md"> Especificação do Projeto</a></li>
+<li><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/blob/main/documentos/03-Metodologia.md"> Metodologia</a></li>
+<li><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/blob/main/documentos/04-Projeto%20de%20Interface.md"> Projeto de Interface</a></li>
+<li><a href="documentos/05-Template padrão da Aplicação.md"> Template padrão da Aplicação</a></li>
+<li><a href="documentos/06-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
+<li><a href="documentos/07-Plano de Testes de Software.md"> Plano de Testes de Software</a></li>
+<li><a href="documentos/08-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
+<li><a href="documentos/09-Referências.md"> Referências Bibliográficas</a></li>
 </ol>
 
-# Hosting
+# Hospedagem
 
-* Enter the public email address of access to the published content. 
 
-# Source Code
 
-* <a href="source code/README.md">Source Code</a>
+# Código-Fonte
 
-# Presentation
+* <a href="codigo-fonte/README.md">Código Fonte</a>
 
-* <a href="presentation/README.md">Project Presentation</a>
+# Apresentação
+
+* <a href="apresentacao/README.md">Apresentação do Projeto</a>

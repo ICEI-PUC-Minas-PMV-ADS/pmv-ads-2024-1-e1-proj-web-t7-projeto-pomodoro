@@ -18,7 +18,7 @@ O projeto "Pomodoro" visa tornar o processo de estudo mais eficiente e agradáve
 
 ## Orientador
 
-* Professor(a): Carlos Alberto
+* Professor(a): Carlos Alberto Marques Pietrobon
 
 # Documentação
 

@@ -12,12 +12,8 @@ O projeto "Pomodoro" visa tornar o processo de estudo mais eficiente e agradáve
 
 ## Integrantes
 
-* Rafael de Almeida Chaia Toledo
-* Bruno Monteiro Lima
-* Felipe de Souza Montes
 * Heitor Santos Alves
 * Pablo de Araujo de Santo
-* Raynan Fernandes Castro Silva Rodrigues 
 * Daniel de Paulo de Oliveira
 
 ## Orientador

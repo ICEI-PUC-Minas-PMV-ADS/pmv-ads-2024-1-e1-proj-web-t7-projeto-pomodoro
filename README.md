@@ -31,7 +31,7 @@ O projeto "Pomodoro" visa tornar o processo de estudo mais eficiente e agradáve
 <li><a href="documentos/06-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
 <li><a href="documentos/07-Plano de Testes de Software.md"> Plano de Testes de Software</a></li>
 <li><a href="documentos/08-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
-<li><a href="documentos/09-Referências.md"> Referências Bibliográficas</a></li>
+<li><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/blob/main/documentos/09-Refer%C3%AAncias%20Bibliogr%C3%A1ficas.md"> Referências Bibliográficas</a></li>
 </ol>
 
 # Hospedagem

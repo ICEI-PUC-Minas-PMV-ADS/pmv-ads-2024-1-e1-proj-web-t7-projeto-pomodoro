@@ -3,7 +3,7 @@
 
 ## User Flow
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+Os visitantes do site que optarem por não efetuar o login terão acesso limitado às funcionalidades, podendo apenas utilizar o cronômetro Pomodoro. No entanto, os usuários que estiverem logados poderão fazer anotações diretamente no site e salvá-las para consulta posterior.
 
 <a href="Flow Chart"> <img src="img/FlowchartAj.jpg"></a>
 ## Protótipo

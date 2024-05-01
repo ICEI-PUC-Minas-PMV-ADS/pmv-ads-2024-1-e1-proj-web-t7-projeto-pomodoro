@@ -22,7 +22,7 @@ Na home page os visitantes do site que optarem por não efetuar o login terão a
 
 A página de Login oferece a opção para o usuário acessar o sistema ou a opção de realizar o cadastro.
 
-<a href="Página inicial"> <img src="img/BaixaFidelidade/002-pag-login.png"></a>
+<a href="Página de login"> <img src="img/BaixaFidelidade/002-pag-login.png"></a>
 
 ### Formulário de Cadastro
 

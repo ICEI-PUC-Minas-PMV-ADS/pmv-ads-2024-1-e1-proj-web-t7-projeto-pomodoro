@@ -48,6 +48,12 @@ O usuário pode ter acesso as anotações salvas ao acessar a aba ”Anotações
 
 <a href="Anotações"> <img src="img/BaixaFidelidade/006-anotacoes.png"></a>
 
+### Página com o perfil do usuário
+
+O usuário pode ter acesso e editar as suas informações pessoais salvas.
+
+<a href="Perfil do usuário"> <img src="img/BaixaFidelidade/007-perfil.png"></a>
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 >- Ferramentas:

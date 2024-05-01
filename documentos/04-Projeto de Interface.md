@@ -54,6 +54,12 @@ O usuário pode ter acesso e editar as suas informações pessoais salvas.
 
 <a href="Perfil do usuário"> <img src="img/BaixaFidelidade/007-perfil.png"></a>
 
+### Página com informações sobre o Site e contato com os desenvolvedores
+
+A página "Sobre nós” é o local reservado para mais informações sobre o site e sobre a equipe de desenvolvimento.
+
+<a href="Sobre nós"> <img src="img/BaixaFidelidade/008-sobre.png"></a>
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 >- Ferramentas:

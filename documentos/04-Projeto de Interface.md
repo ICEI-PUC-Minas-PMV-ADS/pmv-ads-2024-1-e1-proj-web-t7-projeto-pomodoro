@@ -36,6 +36,13 @@ Após o login/cadastro o usuário retorna para a pagina inicial do cronômetro c
 
 <a href="Página inicial"> <img src="img/BaixaFidelidade/004-logado.png"></a>
 
+#### Variações de marcação no cronômetro
+
+A seguir temos um exemplo do cronometro quando o usuário seleciona as opções de pausa.
+
+<a href="Exemplo do cronômetro"> <img src="img/BaixaFidelidade/005-exe-crono.png"></a>
+
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 >- Ferramentas:

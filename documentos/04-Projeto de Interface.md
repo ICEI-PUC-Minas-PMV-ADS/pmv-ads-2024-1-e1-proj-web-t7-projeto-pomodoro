@@ -28,7 +28,7 @@ A página de Login oferece a opção para o usuário acessar o sistema ou a opç
 
 Na página do formulário de cadastro são coletadas as informações básicas do usuário.
 
-<a href="Página inicial"> <img src="img/BaixaFidelidade/003-pag-cadastro.png"></a>
+<a href="Formulário de Cadastro"> <img src="img/BaixaFidelidade/003-pag-cadastro.png"></a>
  
 ### Página inicial após o login/cadastro
 

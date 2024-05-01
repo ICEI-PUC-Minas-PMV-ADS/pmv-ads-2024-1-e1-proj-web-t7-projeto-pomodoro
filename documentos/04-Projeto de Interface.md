@@ -42,6 +42,11 @@ A seguir temos um exemplo do cronometro quando o usuário seleciona as opções 
 
 <a href="Exemplo do cronômetro"> <img src="img/BaixaFidelidade/005-exe-crono.png"></a>
 
+### Página com anotações salvas
+
+O usuário pode ter acesso as anotações salvas ao acessar a aba ”Anotações”.
+
+<a href="Anotações"> <img src="img/BaixaFidelidade/006-anotacoes.png"></a>
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)

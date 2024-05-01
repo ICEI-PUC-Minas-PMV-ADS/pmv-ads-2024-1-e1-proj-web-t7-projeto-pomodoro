@@ -30,6 +30,12 @@ Na página do formulário de cadastro são coletadas as informações básicas d
 
 <a href="Página inicial"> <img src="img/BaixaFidelidade/003-pag-cadastro.png"></a>
  
+### Página inicial após o login/cadastro
+
+Após o login/cadastro o usuário retorna para a pagina inicial do cronômetro com a funcionalidade de realizar anotações.
+
+<a href="Página inicial"> <img src="img/BaixaFidelidade/004-logado.png"></a>
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 >- Ferramentas:

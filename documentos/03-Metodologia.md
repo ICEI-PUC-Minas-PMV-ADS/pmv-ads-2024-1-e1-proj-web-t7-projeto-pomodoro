@@ -11,10 +11,10 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 
-- Scrum Master: Rafael de Almeida Chaia Toledo
-- Product Owner: Felipe de Souza Montes
-- Equipe de Desenvolvimento: Rafael de Almeida Chaia Toledo, Bruno Monteiro Lima, Felipe de Souza Montes, Heitor Santos Alves, Pablo de Araujo de Santo, Raynan Fernandes Castro Silva Rodrigues, Daniel de Paulo de Oliveira
-- Equipe de Design: Rafael de Almeida Chaia Toledo, Raynan Fernandes Castro Silva Rodrigues
+- Scrum Master:
+- Product Owner: 
+- Equipe de Desenvolvimento:
+- Equipe de Design:
 
 ### Processo
 

@@ -36,7 +36,7 @@ Após o login/cadastro o usuário retorna para a pagina inicial do cronômetro c
 
 <a href="Página inicial"> <img src="img/BaixaFidelidade/004-logado.png"></a>
 
-#### Variações de marcação no cronômetro
+### Variações de marcação no cronômetro
 
 A seguir temos um exemplo do cronometro quando o usuário seleciona as opções de pausa.
 

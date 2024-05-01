@@ -23,6 +23,12 @@ Na home page os visitantes do site que optarem por não efetuar o login terão a
 A página de Login oferece a opção para o usuário acessar o sistema ou a opção de realizar o cadastro.
 
 <a href="Página inicial"> <img src="img/BaixaFidelidade/002-pag-login.png"></a>
+
+### Formulário de Cadastro
+
+Na página do formulário de cadastro são coletadas as informações básicas do usuário.
+
+<a href="Página inicial"> <img src="img/BaixaFidelidade/003-pag-cadastro.png"></a>
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)

@@ -13,7 +13,7 @@ O projeto "Pomodoro" visa tornar o processo de estudo mais eficiente e agradáve
 ## Integrantes
 
 * Heitor Santos Alves
-* Pablo de Araujo de Santo
+* Pablo de Araujo de Santos
 * Daniel de Paulo de Oliveira
 
 ## Orientador

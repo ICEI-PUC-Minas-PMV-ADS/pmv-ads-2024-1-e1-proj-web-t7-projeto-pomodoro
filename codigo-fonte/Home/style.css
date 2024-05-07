@@ -68,6 +68,15 @@ a {
     text-decoration: none;
 }
 
+.login-btn{
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--cinzaFundo);
+    color: var(--branco);
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -193,7 +202,7 @@ a {
     }
     50% {
         transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(53, 172, 224, 0);
+        box-shadow: 0 0 0 10px rgba(53, 172, 224, 0);
     }
     100% {
         transform: scale(0.97);

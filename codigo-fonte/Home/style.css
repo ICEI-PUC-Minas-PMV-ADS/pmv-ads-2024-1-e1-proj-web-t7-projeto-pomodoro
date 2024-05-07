@@ -143,7 +143,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: conic-gradient(var(--verdeclaro) 60deg, var(--cinzaFundo) 60deg);
+    background: conic-gradient(var(--verdeclaro) 360deg, var(--cinzaFundo) 0deg);
     border-radius: 50%;
     animation: pulse 3s infinite;
     transition: all ease;

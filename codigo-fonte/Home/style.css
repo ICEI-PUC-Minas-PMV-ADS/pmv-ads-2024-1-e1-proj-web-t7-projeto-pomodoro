@@ -1,0 +1,223 @@
+* {
+    margin:0;
+    padding: 0;
+    border:0;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --branco: #F2F2F2;
+    --cinzaFundo: #131426;
+    --verdeclaro: #16F28B;
+    --magenta: #343740;
+    --vermelho: #F2295F;
+}
+
+body{
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: none;
+    
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--cinzaFundo);
+    justify-content: center;
+}
+
+header {
+    background-color: #dfdfdf;
+    color: var(--ccinzaFundo);
+}
+
+nav{
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: none;
+    /*box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;*/
+
+}
+
+.card-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-header h1{
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--branco);
+}
+
+.card-header-buttons{
+    display: flex;
+    justify-content: stretch;
+    gap: 10px;
+    padding: 4px;
+}
+
+.card-header-buttons button{
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: var(--cinzaFundo);
+    color: var(--branco);
+}
+
+.card-header-buttons .active{
+    background-color: var(--vermelho);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.progress-bar {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(var(--verdeclaro) 60deg, var(--cinzaFundo) 60deg);
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+    transition: all ease;
+    box-shadow: rgba(21, 242, 139, 1) 0px 0px 0px 2px, 
+                rgba(6, 44, 16, 0.65) 0px 4px 6px -1px, 
+                rgb(58, 50, 2) 0px 1px 0px inset;
+}
+
+.progress-bar-inner {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdfdf;
+    border-radius: 50%;
+    box-shadow: rgba(7, 53, 15, 0.4) 0px 0px 0px 2px, 
+                rgba(6, 44, 16, 0.65) 0px 4px 6px -1px, 
+                rgb(58, 50, 2) 0px 1px 0px inset;
+}
+
+.progress-bar-inner h2 {
+    color: var(--cinzaFundo);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card-footer button {
+    padding: 10px 12px;
+    border-radius: 20px;
+    background-color: #15BF81;
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card-footer .btn-iniciar {
+    background-color: #16F28B;
+}
+
+.card-footer .btn-parar {
+    background-color: #168C61;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.97);
+        box-shadow: 0 0 0 0 rgb(22, 242, 139);
+    }
+    50% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(53, 172, 224, 0);
+    }
+    100% {
+        transform: scale(0.97);
+        box-shadow: 0 0 0 0 rgba(53, 172, 224, 0);
+    }
+}
+
+/* Color Theme Swatches in Hex */
+.Logpass---Mobile-app-1-hex { color: #F2295F; }
+.Logpass---Mobile-app-2-hex { color: #131426; }
+.Logpass---Mobile-app-3-hex { color: #15BF81; }
+.Logpass---Mobile-app-4-hex { color: #168C61; }
+.Logpass---Mobile-app-5-hex { color: #16F28B; }
+
+/* Color Theme Swatches in RGBA */
+.Logpass---Mobile-app-1-rgba { color: rgba(242, 41, 94, 1); }
+.Logpass---Mobile-app-2-rgba { color: rgba(19, 20, 38, 1); }
+.Logpass---Mobile-app-3-rgba { color: rgba(21, 191, 128, 1); }
+.Logpass---Mobile-app-4-rgba { color: rgba(22, 140, 97, 1); }
+.Logpass---Mobile-app-5-rgba { color: rgba(21, 242, 139, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Logpass---Mobile-app-1-hsla { color: hsla(343, 88, 55, 1); }
+.Logpass---Mobile-app-2-hsla { color: hsla(236, 33, 11, 1); }
+.Logpass---Mobile-app-3-hsla { color: hsla(157, 80, 41, 1); }
+.Logpass---Mobile-app-4-hsla { color: hsla(157, 72, 31, 1); }
+.Logpass---Mobile-app-5-hsla { color: hsla(151, 89, 51, 1); }

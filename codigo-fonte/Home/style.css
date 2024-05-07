@@ -143,13 +143,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: conic-gradient(var(--verdeclaro) 360deg, var(--cinzaFundo) 0deg);
+    background: conic-gradient(var(--verdeclaro) 60deg, var(--branco) 0deg);
     border-radius: 50%;
     animation: pulse 3s infinite;
     transition: all ease;
     box-shadow: rgba(21, 242, 139, 1) 0px 0px 0px 2px, 
-                rgba(6, 44, 16, 0.65) 0px 4px 6px -1px, 
-                rgb(58, 50, 2) 0px 1px 0px inset;
+                rgba(249, 250, 249, 0.65) 0px 4px 6px -1px, 
+                rgb(255, 255, 255) 0px 1px 0px inset;
 }
 
 .progress-bar-inner {
@@ -160,9 +160,9 @@ a {
     justify-content: center;
     background: #dfdfdf;
     border-radius: 50%;
-    box-shadow: rgba(7, 53, 15, 0.4) 0px 0px 0px 2px, 
-                rgba(6, 44, 16, 0.65) 0px 4px 6px -1px, 
-                rgb(58, 50, 2) 0px 1px 0px inset;
+    box-shadow: rgba(247, 248, 247, 0.4) 0px 0px 0px 2px, 
+                rgba(251, 252, 252, 0.65) 0px 4px 6px -1px, 
+                rgb(254, 254, 253) 0px 1px 0px inset;
 }
 
 .progress-bar-inner h2 {

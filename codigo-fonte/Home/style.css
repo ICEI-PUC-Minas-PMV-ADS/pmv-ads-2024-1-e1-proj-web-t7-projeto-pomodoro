@@ -19,11 +19,12 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: none;
+    background-color: var(--cinzaFundo)
     
 }
 
 section{
-    height: 100vh;
+    margin-top: 120px;
     display: flex;
     align-items: center;
     background-color: var(--cinzaFundo);

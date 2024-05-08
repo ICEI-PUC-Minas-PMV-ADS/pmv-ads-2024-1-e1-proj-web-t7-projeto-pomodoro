@@ -16,7 +16,7 @@
 }
 
 body{
-    font-family: "Prompt", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: none;
     
@@ -51,12 +51,12 @@ nav a{
 }
 
 .logo{
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
+    font-weight: 900;
+    font-style: bold;
     text-transform: uppercase;
-
+    cursor: pointer;
 }
 
 .menu{
@@ -76,6 +76,7 @@ ul{
     font-size: 14px;
     background-color: var(--cinzaFundo);
     color: var(--branco);
+    cursor: pointer;
 }
 
 .container{
@@ -123,6 +124,7 @@ ul{
     font-size: 12px;
     background-color: var(--cinzaFundo);
     color: var(--branco);
+    cursor: pointer;
 }
 
 .card-header-buttons .active{
@@ -185,6 +187,7 @@ ul{
     color: var(--branco);
     font-weight: 600;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .card-footer .btn-iniciar {
@@ -209,24 +212,3 @@ ul{
         box-shadow: 0 0 0 0 rgba(53, 172, 224, 0);
     }
 }
-
-/* Color Theme Swatches in Hex */
-.Logpass---Mobile-app-1-hex { color: #F2295F; }
-.Logpass---Mobile-app-2-hex { color: #131426; }
-.Logpass---Mobile-app-3-hex { color: #15BF81; }
-.Logpass---Mobile-app-4-hex { color: #168C61; }
-.Logpass---Mobile-app-5-hex { color: #16F28B; }
-
-/* Color Theme Swatches in RGBA */
-.Logpass---Mobile-app-1-rgba { color: rgba(242, 41, 94, 1); }
-.Logpass---Mobile-app-2-rgba { color: rgba(19, 20, 38, 1); }
-.Logpass---Mobile-app-3-rgba { color: rgba(21, 191, 128, 1); }
-.Logpass---Mobile-app-4-rgba { color: rgba(22, 140, 97, 1); }
-.Logpass---Mobile-app-5-rgba { color: rgba(21, 242, 139, 1); }
-
-/* Color Theme Swatches in HSLA */
-.Logpass---Mobile-app-1-hsla { color: hsla(343, 88, 55, 1); }
-.Logpass---Mobile-app-2-hsla { color: hsla(236, 33, 11, 1); }
-.Logpass---Mobile-app-3-hsla { color: hsla(157, 80, 41, 1); }
-.Logpass---Mobile-app-4-hsla { color: hsla(157, 72, 31, 1); }
-.Logpass---Mobile-app-5-hsla { color: hsla(151, 89, 51, 1); }

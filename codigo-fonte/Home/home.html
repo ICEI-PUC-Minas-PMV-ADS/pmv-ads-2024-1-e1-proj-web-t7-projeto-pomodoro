@@ -29,11 +29,11 @@
                        
 
                         <div class="card-header-buttons">
-                            <button id="btn-pomodoro" class="active">Pomodoro</button>
-                            <button id="pausa">Pausa</button>
+                            <button id="buttonTypePomodoro" class="active" onclick="setPomodoroType(TIMER_TYPE_POMODORO)">Pomodoro</button>
+                            <button id="buttonTypeShortBreak">Pausa</button>
                         </div>
                         <div class="card-body">
-                            <div id="barraProgresso" class="progress-bar">
+                            <div id="circularProgressBar" class="progress-bar">
                                 <div class="progress-bar-inner">
                                     <h2 class="progress-value">25:00</h2>
                                 </div>
@@ -43,9 +43,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button class="btn-iniciar">Iniciar</button>
-                        <button class="btn-parar">Parar</button>
-                        <button class="btn-reset">Reiniciar</button>
+                        <button id="buttonStartTimer" class="btn-iniciar" onclick="startTimer();">Iniciar</button>
                     </div>
                 </div>
             </div>

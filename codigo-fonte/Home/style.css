@@ -35,6 +35,10 @@ header {
     color: var(--ccinzaFundo);
 }
 
+nav a {
+    text-decoration: none;
+}
+
 nav{
     max-width: 1120px;
     margin: auto;
@@ -45,6 +49,7 @@ nav{
     align-items: center;
     text-decoration: none;
 }
+
 
 .logo{
     font-family: "Plus Jakarta Sans", sans-serif;

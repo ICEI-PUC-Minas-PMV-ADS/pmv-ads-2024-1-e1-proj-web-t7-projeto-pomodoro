@@ -35,9 +35,6 @@ header {
     color: var(--ccinzaFundo);
 }
 
-nav a {
-    text-decoration: none;
-}
 
 nav{
     max-width: 1120px;
@@ -47,9 +44,11 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none;
 }
 
+nav a{
+    color: var(--ccinzaFundo);
+}
 
 .logo{
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -68,9 +67,6 @@ nav{
 
 ul{
     list-style: none;
-}
-a {
-    text-decoration: none;
 }
 
 .login-btn{

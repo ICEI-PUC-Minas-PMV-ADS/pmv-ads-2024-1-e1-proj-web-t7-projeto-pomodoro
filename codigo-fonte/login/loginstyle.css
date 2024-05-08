@@ -1,0 +1,139 @@
+* {
+    margin:0;
+    padding: 0;
+    border:0;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --branco: #F2F2F2;
+    --cinzaFundo: #131426;
+    --verdeclaro: #16F28B;
+    --magenta: #343740;
+    --vermelho: #F2295F;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: none;
+    
+}
+
+header {
+    background-color: #dfdfdf;
+    color: var(--ccinzaFundo);
+}
+
+
+nav{
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    color: var(--ccinzaFundo);
+}
+
+.logo{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.login-btn{
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--cinzaFundo);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    align-items: auto;
+    background-color: var(--cinzaFundo);
+    justify-content: center;
+    color: var(--branco);
+}
+
+main a{
+    color: var(--verdeclaro);
+}
+
+#login{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    font-size: 32px;
+}
+
+.email input{
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: var(--branco);
+    color: var(--cinzaFundo);
+    margin-top: 20px;
+}
+
+.senha input{
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: var(--branco);
+    color: var(--cinzaFundo);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.entrar input{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    margin-top: 15px;
+}
+
+input::placeholder{
+    color: var(--magenta);
+}
+
+input:focus{
+    outline: none;
+}

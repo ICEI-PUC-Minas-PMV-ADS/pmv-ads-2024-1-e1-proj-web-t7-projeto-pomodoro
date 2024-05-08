@@ -43,7 +43,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    text-decoration: none;
 }
 
 .logo{
@@ -90,7 +90,6 @@ a {
     padding: 20px;
     border-radius: 20px;
     background: none;
-    /*box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;*/
 
 }
 

@@ -172,3 +172,23 @@ input::placeholder{
 input:focus{
     outline: none;
 }
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    display: none;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    display: none;
+}

@@ -30,21 +30,17 @@
             <div class="caixa">
 
                 <h1>CADASTRO</h1>
-                
-                <div class="name">
-                    <input type="text" placeholder="Nome completo" required>
-                </div>
 
                 <div class="name">
-                    <input type="text" placeholder="Nome de usuário" required>
+                    <input id="nomeusuario"type="text" placeholder="Nome de usuário" required>
                 </div>
 
                 <div class="email">
-                    <input type="email" placeholder="E-mail" required>
+                    <input id="email" type="email" placeholder="E-mail" required>
                 </div>
 
                 <div class="telefone">
-                    <input type="tel" placeholder="Celular" required>
+                    <input id="telefone" type="tel" placeholder="Celular" required>
                 </div>
 
                 <div class="senha">
@@ -54,12 +50,12 @@
 
                 <div class="senha">
                     <i id="verConfirmeSenha" class="fa fa-eye" aria-hidden="true"></i>
-                    <input id="confirmeSenha" type="password" placeholder="Confirme sua senha" required>
+                    <input id="confirmSenha" type="password" placeholder="Confirme sua senha" required>
                 </div>
 
                 <div class="entrar">
                     <P>Já Pussui uma conta? <a href="login.html">Clique aqui</a>.</P>
-                    <input type="submit" placeholder="Entrar" value="Cadastrar">
+                    <input onclick="cadastrar()" type="submit" placeholder="Entrar" value="Cadastrar">
                 </div>
             </div>
 

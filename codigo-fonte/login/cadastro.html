@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <meta name="description" content="Prepare-se para se concentrar, trabalhar com eficiência e conquistar seus sonhos com Pomodoro clock o seu parceiro de produtividade confiável.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/codigo-fonte/login/loginstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
     <header>
@@ -47,22 +48,24 @@
                 </div>
 
                 <div class="senha">
-                    <input type="password" placeholder="Senha" required>
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    <input id="senha" type="password" placeholder="Senha" required>
                 </div>
 
                 <div class="senha">
-                    <input type="password" placeholder="Confirme sua senha" required>
+                    <i id="verConfirmeSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    <input id="confirmeSenha" type="password" placeholder="Confirme sua senha" required>
                 </div>
 
                 <div class="entrar">
                     <P>Já Pussui uma conta? <a href="login.html">Clique aqui</a>.</P>
-                    <input type="submit" placeholder="Entrar">
+                    <input type="submit" placeholder="Entrar" value="Cadastrar">
                 </div>
             </div>
 
         </div>
     </main>
-    
+    <script src="Login.js"></script>
 
 </body>
 </html>

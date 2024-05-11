@@ -20,6 +20,9 @@
     --bard-color-brand-text-gradient-stop-3: #d96570;
     --bard-color-brand-text-gradient-stop-3-rgb: 217, 101, 112;
     --bard-color-surface: #131314;
+
+    --hover-violet:  rgba(100, 148, 237, 0.205);
+    --color-violet: rgba(100, 148, 237, 1);
 }
 
 body{

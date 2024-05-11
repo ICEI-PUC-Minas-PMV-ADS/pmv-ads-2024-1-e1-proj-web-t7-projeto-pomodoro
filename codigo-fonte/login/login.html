@@ -1,53 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <meta name="description" content="Prepare-se para se concentrar, trabalhar com eficiência e conquistar seus sonhos com Pomodoro clock o seu parceiro de produtividade confiável.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/codigo-fonte/login/loginstyle.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-
-</head>
-<body>
+    <meta
+      name="description"
+      content="Prepare-se para se concentrar, trabalhar com eficiência e conquistar seus sonhos com Pomodoro clock o seu parceiro de produtividade confiável."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/codigo-fonte/login/loginstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <span class="logo"><a href="/codigo-fonte/Home/HomeSemLogin.html">Pomodoro Clock</a></span>
-            <ul class="menu">
-                <li><a href="/codigo-fonte/Home/HomeSemLogin.html">Home</a></li>
-                <li><a href="/codigo-fonte/saibamais/saibamais.html">Saiba mais</a></li>
-            </ul>
-            <button class="login-btn"><a>Login</a></button>
-        </nav>
+      <!-- <nav>
+        <span class="logo"
+          ><a href="/codigo-fonte/Home/HomeSemLogin.html"
+            >Pomodoro Clock</a
+          ></span
+        >
+        <ul class="menu">
+          <li><a href="/codigo-fonte/Home/HomeSemLogin.html">Home</a></li>
+          <li>
+            <a href="/codigo-fonte/saibamais/saibamais.html">Saiba mais</a>
+          </li>
+        </ul>
+        <button class="login-btn"><a>Login</a></button>
+      </nav> -->
+
+      <nav>
+        <span class="logo">Pomodoro Clock</span>
+
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="/codigo-fonte/Home/HomeSemLogin.html">
+              <i class="bi bi-house"></i>
+              Home
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+            <a href="/codigo-fonte/anotacoes/anotacoes.html">
+              <i class="bi bi-card-checklist"></i>Anotações</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="/codigo-fonte/perfil/perfil.html">
+              <i class="bi bi-person-circle"></i>Perfil</a
+            >
+          </li> -->
+          <li class="menu-item">
+            <a href="/codigo-fonte/saibamais/saibamais.html">
+              <i class="bi bi-info-circle"></i>Saiba mais</a
+            >
+          </li>
+
+          <li class="menu-item">
+            <a id="link"> <i class="bi bi-box-arrow-right"></i>Login</a>
+          </li>
+        </ul>
+
+        <!-- <button class="login-btn"><a href="/codigo-fonte/login/login.html">Login</a></button> -->
+      </nav>
     </header>
     <main>
-        <div id="login">
+      <div id="login">
+        <div class="caixa">
+          <h1>LOGIN</h1>
+          <div id="msgError"></div>
+          <div class="email">
+            <input id="email" type="email" placeholder="E-mail" />
+          </div>
 
-            <div class="caixa">
+          <div class="senha">
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            <input id="senha" type="password" placeholder="Senha" required />
+          </div>
 
-                <h1>LOGIN</h1>
-                <div id="msgError"></div>
-                <div class="email">
-                    <input id='email' type="email" placeholder="E-mail">
-                </div>
-
-                <div class="senha">
-                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
-                    <input id="senha" type="password" placeholder="Senha" required>
-                </div>
-
-                <div class="entrar">
-                    <P>Novo por aqui? <a href="cadastro.html">Crie sua conta</a>.</P>
-                    <input onclick="entrar()" type="submit" placeholder="Entrar" value="Entrar">
-                </div>
-            </div>
-
+          <div class="entrar">
+            <p>Novo por aqui? <a href="cadastro.html">Crie sua conta</a>.</p>
+            <input
+              onclick="entrar()"
+              type="submit"
+              placeholder="Entrar"
+              value="Entrar"
+            />
+          </div>
         </div>
+      </div>
     </main>
     <script src="Login.js"></script>
-
-</body>
+  </body>
 </html>

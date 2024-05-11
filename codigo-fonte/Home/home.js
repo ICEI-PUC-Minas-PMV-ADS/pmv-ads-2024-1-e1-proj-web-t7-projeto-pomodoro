@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         circularProgressBarNumber.textContent = formatNumberInStringMinute(timerValue);
-        circularProgressBar.style.background = `conic-gradient(var(--verdeclaro) ${timerValue * multiplierFactor}deg, var(--cinzaFundo) 0deg)`;
+        // circularProgressBar.style.background = `conic-gradient(var(--verdeclaro) ${timerValue * multiplierFactor}deg, var(--cinzaFundo) 0deg)`;
     } 
 
     const setPomodoroType = (type) => {    
@@ -96,3 +96,28 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+const handleCurrentMenu = () => {
+    const link = document.getElementById('link');
+
+    link.className = 'menu-active'
+}
+
+const handleCanRenderMenuItem = () => {
+    const notationLink = document.getElementById('notation');
+    const profileLink = document.getElementById('profile');
+    const logginButton = document.getElementById('loggin-loggout')
+    const home = document.getElementById('home');
+
+    const hasUser = localStorage.getItem('userHasLogged');
+
+    if (!hasUser) {
+        home.innerHTML = "<a href='/codigo-fonte/Home/homeSemLogin.html'><i class='bi bi-house'></i>Home</a>"
+        profileLink.style.display = 'none';
+        notationLink.style.display = 'none';
+        logginButton.innerHTML = "<i class='bi bi-box-arrow-right'></i>Login</a>";
+    }
+}
+
+handleCurrentMenu()
+handleCanRenderMenuItem()

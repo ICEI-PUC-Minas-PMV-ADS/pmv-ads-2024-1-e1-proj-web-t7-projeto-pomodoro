@@ -35,23 +35,8 @@
             </a>
           </li>
           <li class="menu-item">
-<<<<<<< HEAD:codigo-fonte/index.html
-            <a href="/codigo-fonte/pages/login.html">
+            <a href="/docs/pages/login.html">
               <i class="bi bi-box-arrow-right"></i>login</a
-=======
-            <a href="/codigo-fonte/anotacoes/anotacoes.html">
-              <i class="bi bi-card-checklist"></i>Anotações</a
-            >
-          </li>
-          <li class="menu-item">
-            <a href="/codigo-fonte/perfil/perfil.html">
-              <i class="bi bi-person-circle"></i>Perfil</a
-            >
-
-          <li class="menu-item">
-            <a onclick="logout();">
-              <i class="bi bi-box-arrow-right"></i>Logout</a
->>>>>>> b46a6e6e63aaca46a7dca7af38fd0e8e281df3af:codigo-fonte/Home/home.html
             >
           </li>
         </ul>
@@ -59,42 +44,51 @@
     </header>
 
     <main>
-        <div class="container">
-          <div class="card">
-            <div class="card-header">
-              <div class="card-header-buttons">
-                <button
-                  id="buttonTypePomodoro"
-                  class="active"
-                  onclick="setPomodoroType(TIMER_TYPE_POMODORO)"
-                >
-                  Pomodoro
-                </button>
-                <button id="buttonTypeShortBreak">Pausa</button>
-              </div>
-              <div class="card-body">
-                <div id="circularProgressBar" class="progress-bar">
-                  <div class="progress-bar-inner">
-                    <h2 class="progress-value">25:00</h2>
-                  </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-buttons">
+              <button
+                id="buttonTypePomodoro"
+                class="active"
+                onclick="setPomodoroType(TIMER_TYPE_POMODORO)"
+              >
+                Pomodoro
+              </button>
+              <button id="buttonTypeShortBreak">Pausa</button>
+            </div>
+            <div class="card-body">
+              <div id="circularProgressBar" class="progress-bar">
+                <div class="progress-bar-inner">
+                  <h2 class="progress-value">25:00</h2>
                 </div>
               </div>
             </div>
-            <div class="card-footer">
-              <button
-                id="buttonStartTimer"
-                class="btn-iniciar"
-                onclick="startTimer();"
-              >
-                Iniciar
-              </button>
-            </div>
-
-            <h2 style="color: white; opacity: .7; font-weight: 300; font-size: 12px; letter-spacing: .1em; margin-top: 1em;">
-                *Faça login para utilizar todos os benefícios
-            </h2>
           </div>
+          <div class="card-footer">
+            <button
+              id="buttonStartTimer"
+              class="btn-iniciar"
+              onclick="startTimer();"
+            >
+              Iniciar
+            </button>
+          </div>
+
+          <h2
+            style="
+              color: white;
+              opacity: 0.7;
+              font-weight: 300;
+              font-size: 12px;
+              letter-spacing: 0.1em;
+              margin-top: 1em;
+            "
+          >
+            *Faça login para utilizar todos os benefícios
+          </h2>
         </div>
+      </div>
     </main>
 
     <script src="./assets/js/index.js"></script>

@@ -112,7 +112,7 @@ const handleCanRenderMenuItem = () => {
     const hasUser = localStorage.getItem('userHasLogged');
 
     if (!hasUser) {
-        home.innerHTML = "<a href='/codigo-fonte/Home/homeSemLogin.html'><i class='bi bi-house'></i>Home</a>"
+        home.innerHTML = "<a href='/docs/Home/homeSemLogin.html'><i class='bi bi-house'></i>Home</a>"
         profileLink.style.display = 'none';
         notationLink.style.display = 'none';
         logginButton.innerHTML = "<i class='bi bi-box-arrow-right'></i>Login</a>";

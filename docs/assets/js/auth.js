@@ -1,7 +1,7 @@
 const logout = () => {
   localStorage.removeItem("userHasLogged");
 
-  window.location.href = "/docs/pages/login.html";
+  window.location.href = "login.html";
 };
 
 const showPassword = (type = "senha", eyeIconName = "input-password-eye") => {
@@ -36,7 +36,7 @@ const handleLogin = (e) => {
     if (findUser.password == senha) {
       localStorage.setItem("userHasLogged", true);
 
-      window.location.href = "/docs/pages/home.html";
+      window.location.href = "home.html";
     } else {
       error.setAttribute("style", "display: block");
       error.innerText = "Senha incorreta!";
@@ -93,6 +93,6 @@ const handleRegister = (e) => {
   msgError.innerHTML = "";
 
   setTimeout(() => {
-    window.location.href = "/docs/pages/home.html";
+    window.location.href = "home.html";
   }, 1500);
 };

@@ -1,0 +1,62 @@
+* {
+    margin:0;
+    padding: 0;
+    border:0;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --branco: #F2F2F2;
+    --cinzaFundo: #131426;
+    --verdeclaro: #16F28B;
+    --magenta: #343740;
+    --vermelho: #F2295F;
+    --bard-color-brand-text-gradient-stop-1: #4285f4;
+    --bard-color-brand-text-gradient-stop-1-rgb: 66, 133, 244;
+    --bard-color-brand-text-gradient-stop-2: #9b72cb;
+    --bard-color-brand-text-gradient-stop-2-rgb: 155, 114, 203;
+    --bard-color-brand-text-gradient-stop-3: #d96570;
+    --bard-color-brand-text-gradient-stop-3-rgb: 217, 101, 112;
+    --bard-color-surface: #131314;
+
+    --hover-violet:  rgba(100, 148, 237, 0.205);
+    --color-violet: rgba(100, 148, 237, 1);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: none;
+    background-color: var(--cinzaFundo);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 790px;
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+
+    background-color: var(--cinzaFundo);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}

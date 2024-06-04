@@ -1,0 +1,136 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: none;
+}
+
+.card-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-header h1{
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--branco);
+}
+
+.card-header-buttons{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    width: 100%;
+    border-radius: 12px;
+    gap: 12px;
+    background-color: aliceblue;
+}
+
+.card-header-buttons button{
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.card-header-buttons .active{
+    background-color: var(--vermelho);
+    color:rgba(100, 148, 237, 1);
+    background-color: rgba(100, 148, 237, 0.205);
+    border-radius: 10px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.progress-bar {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+    transition: all ease;
+    box-shadow: rgb(254, 255, 255) 0px 0px 0px 2px, 
+                rgba(249, 250, 249, 0.65) 0px 4px 6px -1px, 
+                rgb(255, 255, 255) 0px 1px 0px inset;
+}
+
+.progress-bar-inner {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: aliceblue;
+    border-radius: 50%;
+    box-shadow: rgba(247, 248, 247, 0.4) 0px 0px 0px 2px, 
+                rgba(251, 252, 252, 0.65) 0px 4px 6px -1px, 
+                rgb(254, 254, 253) 0px 1px 0px inset;
+}
+
+.progress-bar-inner h2 {
+    color: var(--cinzaFundo);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card-footer button {
+    padding: 10px 28px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+ @keyframes pulse {
+    0% {
+        transform: scale(0.97);
+        box-shadow: 0 0 0 0 rgba(100, 148, 237, 1);
+        
+    }
+    50% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(53, 172, 224, 0);
+    }
+    100% {
+        transform: scale(0.97);
+        box-shadow: 0 0 0 0 rgba(53, 172, 224, 0);
+    }
+}

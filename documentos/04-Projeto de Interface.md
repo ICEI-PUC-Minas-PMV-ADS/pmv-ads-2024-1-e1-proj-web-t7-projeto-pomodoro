@@ -44,7 +44,7 @@ A seguir temos um exemplo do cronometro quando o usuário seleciona as opções 
 
 ### Página com anotações salvas
 
-O usuário pode ter acesso as anotações salvas ao acessar a aba ”Anotações”.
+O usuário pode ter acesso as anotações salvas ao acessar a aba ”Anotações” juntamente com estatísticas do tempo total gasto para o foco naquela seção de estudos.
 
 <a href="Anotações"> <img src="img/BaixaFidelidade/006-anotacoes.png"></a>
 
@@ -54,11 +54,6 @@ O usuário pode ter acesso e editar as suas informações pessoais salvas.
 
 <a href="Perfil do usuário"> <img src="img/BaixaFidelidade/007-perfil.png"></a>
 
-### Página com informações sobre o Site e contato com os desenvolvedores
-
-A página "Sobre nós” é o local reservado para mais informações sobre o site e sobre a equipe de desenvolvimento.
-
-<a href="Sobre nós"> <img src="img/BaixaFidelidade/008-sobre.png"></a>
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)

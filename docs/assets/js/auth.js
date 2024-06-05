@@ -80,19 +80,20 @@ const handleRegister = (e) => {
   msgError.setAttribute("style", "display: none");
 
   listaUser.push({
-    name: nome.value,
-    email: email.value,
-    password: senha.value,
+    name: nome,
+    email: email,
+    password: senha,
   });
 
   localStorage.setItem("listaUser", JSON.stringify(listaUser));
 
-  msgSuccess.setAttribute("style", "display: block");
-  msgSuccess.innerHTML = "<strong>Cadastrando usuário...</strong>";
-  msgError.setAttribute("style", "display: none");
-  msgError.innerHTML = "";
+  console.log(listaUser)
+  // msgSuccess.setAttribute("style", "display: block");
+  // msgSuccess.innerHTML = "<strong>Cadastrando usuário...</strong>";
+  // msgError.setAttribute("style", "display: none");
+  // msgError.innerHTML = "";
 
-  setTimeout(() => {
-    window.location.href = "home.html";
-  }, 1500);
+  // setTimeout(() => {
+  //   window.location.href = "home.html";
+  // }, 1500);
 };

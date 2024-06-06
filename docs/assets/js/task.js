@@ -45,24 +45,52 @@ const handleActiveTask = (id) => {
   let currentActiveTask = tasks?.find((task) => task?.active);
   let taskToActive = tasks?.find((task) => task?.id == id);
 
-  if (taskToActive?.id == currentActiveTask?.id) return;
+  if (!currentActiveTask) {
+    const tasksCleared = tasks?.filter((task) => task?.id != id);
 
-  const tasksCleared = tasks?.filter((task) => task?.id != id && !task?.active);
+    taskToActive = {
+      ...taskToActive,
+      active: true,
+    };
 
-  currentActiveTask = {
-    ...currentActiveTask,
-    active: false,
-  };
+    tasksCleared?.push(taskToActive);
 
-  taskToActive = {
-    ...taskToActive,
-    active: true,
-  };
+    localStorage.setItem("tasks", JSON.stringify(tasksCleared));
 
-  tasksCleared?.push(currentActiveTask);
-  tasksCleared?.push(taskToActive);
+    return handleGenerateTasks();
+  }
 
-  localStorage.setItem("tasks", JSON.stringify(tasksCleared));
+  if (taskToActive?.id == currentActiveTask?.id) {
+    const tasksCleared = tasks?.filter((task) => task?.id != id);
+
+    currentActiveTask = {
+      ...currentActiveTask,
+      active: false,
+    };
+
+    tasksCleared?.push(currentActiveTask);
+
+    localStorage.setItem("tasks", JSON.stringify(tasksCleared));
+  } else {
+    const tasksCleared = tasks?.filter(
+      (task) => task?.id != id && !task?.active
+    );
+
+    currentActiveTask = {
+      ...currentActiveTask,
+      active: false,
+    };
+
+    taskToActive = {
+      ...taskToActive,
+      active: true,
+    };
+
+    tasksCleared?.push(currentActiveTask);
+    tasksCleared?.push(taskToActive);
+
+    localStorage.setItem("tasks", JSON.stringify(tasksCleared));
+  }
 
   handleGenerateTasks();
 };

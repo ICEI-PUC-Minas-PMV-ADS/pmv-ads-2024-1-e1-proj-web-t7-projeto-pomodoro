@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //   const audio = new Audio("alarme.mp3");
 
-  const pomodoroTimerInSeconds = 1500;
-  const shortBreakTimerInSeconds = 300;
+  const pomodoroTimerInSeconds = 1;
+  const shortBreakTimerInSeconds = 1;
   const TIMER_TYPE_POMODORO = "POMODORO";
   const TIMER_TYPE_SHORT_BREAK = "SHORTBREAK";
 
@@ -74,18 +74,45 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const handleStorePomodoroCount = () => {
-    let pomodoroCount = localStorage.getItem("pomodoroCount");
+    const hasUser = localStorage.getItem("userHasLogged");
 
-    if (!pomodoroCount) {
-      pomodoroCount = 2;
-      localStorage.setItem("pomodoroCount", pomodoroCount);
-    } else {
-      pomodoroCount++;
+    const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-      localStorage.setItem("pomodoroCount", pomodoroCount);
+    let activeTask = tasks?.find((task) => task?.active);
+
+    if (activeTask && hasUser) {
+      const noActiveTasks = tasks?.filter((task) => !task?.active);
+
+      if (activeTask?.taskPomodoro == Number(activeTask?.taskPomodoroQtd)) {
+        activeTask = {
+          ...activeTask,
+          active: false,
+          finished: true,
+        };
+      } else {
+        activeTask = {
+          ...activeTask,
+          taskPomodoro: activeTask?.taskPomodoro + 1,
+        };
+      }
+
+      noActiveTasks?.push(activeTask);
+
+      localStorage.setItem("tasks", noActiveTasks);
     }
 
-    pomodoroCountBtn.innerHTML = `#${pomodoroCount}`;
+    // let pomodoroCount = localStorage.getItem("pomodoroCount");
+
+    // if (!pomodoroCount) {
+    //   pomodoroCount = 2;
+    //   localStorage.setItem("pomodoroCount", pomodoroCount);
+    // } else {
+    //   pomodoroCount++;
+
+    //   localStorage.setItem("pomodoroCount", pomodoroCount);
+    // }
+
+    // pomodoroCountBtn.innerHTML = `#${pomodoroCount}`;
   };
 
   const setDocumentTitleInfo = () => {

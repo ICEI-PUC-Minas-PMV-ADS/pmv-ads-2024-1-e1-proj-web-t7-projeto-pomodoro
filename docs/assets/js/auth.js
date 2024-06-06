@@ -87,13 +87,12 @@ const handleRegister = (e) => {
 
   localStorage.setItem("listaUser", JSON.stringify(listaUser));
 
-  console.log(listaUser)
-  // msgSuccess.setAttribute("style", "display: block");
-  // msgSuccess.innerHTML = "<strong>Cadastrando usuário...</strong>";
-  // msgError.setAttribute("style", "display: none");
-  // msgError.innerHTML = "";
+  msgSuccess.setAttribute("style", "display: block");
+  msgSuccess.innerHTML = "<strong>Cadastrando usuário...</strong>";
+  msgError.setAttribute("style", "display: none");
+  msgError.innerHTML = "";
 
-  // setTimeout(() => {
-  //   window.location.href = "home.html";
-  // }, 1500);
+  setTimeout(() => {
+    window.location.href = "home.html";
+  }, 1500);
 };

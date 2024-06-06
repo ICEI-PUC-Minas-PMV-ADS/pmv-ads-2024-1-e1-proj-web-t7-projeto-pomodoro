@@ -89,30 +89,36 @@ document.addEventListener("DOMContentLoaded", function () {
           active: false,
           finished: true,
         };
+
+        localStorage.setItem("pomodoroCount", 1);
       } else {
         activeTask = {
           ...activeTask,
           taskPomodoro: activeTask?.taskPomodoro + 1,
         };
+
+        localStorage.setItem("pomodoroCount", activeTask?.taskPomodoro);
       }
 
       noActiveTasks?.push(activeTask);
 
-      localStorage.setItem("tasks", noActiveTasks);
+      localStorage.setItem("tasks", JSON.stringify(noActiveTasks));
+
+      handleGenerateTasks();
     }
 
-    // let pomodoroCount = localStorage.getItem("pomodoroCount");
+    let pomodoroCount = localStorage.getItem("pomodoroCount");
 
-    // if (!pomodoroCount) {
-    //   pomodoroCount = 2;
-    //   localStorage.setItem("pomodoroCount", pomodoroCount);
-    // } else {
-    //   pomodoroCount++;
+    if (!pomodoroCount) {
+      pomodoroCount = 2;
+      localStorage.setItem("pomodoroCount", pomodoroCount);
+    } else {
+      pomodoroCount++;
 
-    //   localStorage.setItem("pomodoroCount", pomodoroCount);
-    // }
+      localStorage.setItem("pomodoroCount", pomodoroCount);
+    }
 
-    // pomodoroCountBtn.innerHTML = `#${pomodoroCount}`;
+    pomodoroCountBtn.innerHTML = `#${pomodoroCount}`;
   };
 
   const setDocumentTitleInfo = () => {

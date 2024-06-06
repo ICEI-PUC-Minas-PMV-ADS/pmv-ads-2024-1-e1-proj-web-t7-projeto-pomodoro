@@ -1,0 +1,138 @@
+
+.task-container{
+    width: 65%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-btn-add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border-radius: 10px;
+    border: 2px dashed  var(--branco-opaco);
+    color: white;
+    background-color: var(--branco-opaco);
+    padding: 0 4px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    opacity: .7;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+
+    animation: fadeIn .4s ease-in-out;
+}
+
+.task-btn-add:hover{
+    opacity: 1;
+}
+
+.task-form{
+    width: 100%;
+    background-color: var(--branco);
+    padding: 8px;
+    border-radius: 5px;
+
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+
+    animation: fadeIn .4s ease-in-out;
+}
+
+.task-form-input{
+    border-radius: 4px;
+    font-size: 22px;
+    box-shadow: none;
+    border: none;
+    color: rgb(85, 85, 85);
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    outline: none;
+    background-color: inherit;
+}
+
+.task-form-input-label{
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+}
+
+.task-form-input-number{
+    border-radius: 6px;
+    background-color: rgb(221, 221, 221);
+    font-size: 16px;
+    padding: 10px;
+    box-shadow: none;
+    border: none;
+    color: rgb(85, 85, 85);
+    width: 75px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+
+    outline: none;
+}
+
+.task-form-footer{
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.task-form-footer button{
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.task-form-footer button:hover{
+    opacity: .7;
+}
+
+.task-form-footer-btn{
+    background-color: var(--cinzaFundo);
+    color: var(--branco) !important;
+}
+
+.task-card{
+    background-color: var(--branco);
+    padding: 8px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn .4s ease-in-out;
+    cursor: pointer;
+}
+
+.task-card-active{
+    border-left: 6px solid var(--color-violet);
+}
+
+.task-card-title{
+    font-weight: bold;
+}
+
+.task-card-details{ 
+    display: flex;
+    gap: 12px;
+}
+
+.task-card-details-pomos{
+    display: inline-block;
+    color: rgb(170, 170, 170);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 18px;
+    width: 40px;
+    text-align: right;
+}

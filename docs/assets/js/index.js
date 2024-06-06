@@ -1,123 +1,181 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const circularProgressBar = document.querySelector("#circularProgressBar");
-    const circularProgressBarNumber = document.querySelector("#circularProgressBar .progress-value");
-    const buttonTypePomodoro = document.querySelector("#buttonTypePomodoro");
-    const buttonTypeShortBreak = document.querySelector("#buttonTypeShortBreak");
-    const buttonStartTimer = document.querySelector("#buttonStartTimer");
+document.addEventListener("DOMContentLoaded", function () {
+  const btnPomodoroClock = document.getElementById("btnPomodoroClock");
+  const btnShortBreakClock = document.getElementById("btnShortBreakClock");
+  const btnClock = document.getElementById("btnClock");
+  const clockTime = document.getElementById("clockTime");
+  const pomodoroCountBtn = document.getElementById("pomodoroCount");
 
-    // Verifica se os elementos foram encontrados antes de continuar
-    if (!circularProgressBar || !circularProgressBarNumber || !buttonTypePomodoro || !buttonTypeShortBreak || !buttonStartTimer) {
-        console.error("Um ou mais elementos não foram encontrados.");
-        return;
-    }
+  //   const audio = new Audio("alarme.mp3");
 
-    const audio = new Audio('alarme.mp3');
+  const pomodoroTimerInSeconds = 1500;
+  const shortBreakTimerInSeconds = 300;
+  const TIMER_TYPE_POMODORO = "POMODORO";
+  const TIMER_TYPE_SHORT_BREAK = "SHORTBREAK";
 
-    const pomodoroTimerInSeconds = 1500; 
-    const shortBreakTimerInSeconds = 300;
-    const TIMER_TYPE_POMODORO = 'POMODORO';
-    const TIMER_TYPE_SHORT_BREAK = 'SHORTBREAK';
+  let progressInterval;
+  let pomodoroType = TIMER_TYPE_POMODORO;
+  let timerValue = pomodoroTimerInSeconds;
+  let multiplierFactor = 360 / timerValue;
+  let isTimerRunning = false;
 
-    let progressInterval;
-    let pomodoroType = TIMER_TYPE_POMODORO;
-    let timerValue = pomodoroTimerInSeconds;
-    let multiplierFactor = 360 / timerValue;
-    let isTimerRunning = false;
+  function formatNumberInStringMinute(number) {
+    const minutes = Math.floor(number / 60)
+      .toString()
+      .padStart(2, "0");
+    const seconds = (number % 60).toString().padStart(2, "0");
+    return `${minutes}:${seconds}`;
+  }
 
-    function formatNumberInStringMinute(number){
-        const minutes = Math.floor(number / 60).toString().padStart(2, '0');
-        const seconds = (number % 60).toString().padStart(2, '0');
-        return `${minutes}:${seconds}`;
-    }
+  const startTimer = () => {
+    if (!isTimerRunning) {
+      progressInterval = setInterval(() => {
+        timerValue--;
+        if (timerValue == 0) {
+          const nextType =
+            pomodoroType == "POMODORO"
+              ? TIMER_TYPE_SHORT_BREAK
+              : TIMER_TYPE_POMODORO;
 
-    const startTimer = () => {
-        if (!isTimerRunning) {
-            progressInterval = setInterval(() => {
-                timerValue--;
-                setInfoCircularProgressBar();
-                if (timerValue === 0) {
-                    stopTimer();
-                    audio.play();
-                }
-            }, 1000);
+          if (pomodoroType == "SHORTBREAK") {
+            handleStorePomodoroCount();
+          }
 
-            buttonStartTimer.textContent = "Parar"; // Altera o texto do botão para "Parar"
-            isTimerRunning = true; // Define que o temporizador está em execução
-        }
-    }
-
-    const stopTimer = () => {
-        clearInterval(progressInterval);
-        buttonStartTimer.textContent = "Iniciar"; // Altera o texto do botão de volta para "Iniciar"
-        isTimerRunning = false; // Define que o temporizador não está mais em execução
-    }
-
-    const resetTimer = () => {
-        clearInterval(progressInterval);
-        timerValue = (pomodoroType === TIMER_TYPE_POMODORO) ? pomodoroTimerInSeconds : shortBreakTimerInSeconds;
-        multiplierFactor = 360 / timerValue;
-        setInfoCircularProgressBar();
-        stopTimer(); // Para o temporizador ao reiniciar
-    }
-
-    function setInfoCircularProgressBar() {
-        if (timerValue === 0) {
-            stopTimer();
-            audio.play();
-            return;
-        }
-        
-        circularProgressBarNumber.textContent = formatNumberInStringMinute(timerValue);
-        // circularProgressBar.style.background = `conic-gradient(var(--verdeclaro) ${timerValue * multiplierFactor}deg, var(--cinzaFundo) 0deg)`;
-    } 
-
-    const setPomodoroType = (type) => {    
-        pomodoroType = type; 
-
-        if(type === TIMER_TYPE_POMODORO){
-            buttonTypeShortBreak.classList.remove("active");
-            buttonTypePomodoro.classList.add("active");                  
-        } else {
-            buttonTypePomodoro.classList.remove("active");
-            buttonTypeShortBreak.classList.add("active"); 
+          handleChangeClockType(nextType);
+          stopTimer();
         }
 
-        resetTimer();
+        setClockTimerInfo();
+      }, 1000);
+
+      btnClock.textContent = "Parar"; // Altera o texto do botão para "Parar"
+      btnClock.classList.remove("clock-footer-btn-active");
+      isTimerRunning = true; // Define que o temporizador está em execução
+    }
+  };
+
+  const stopTimer = () => {
+    clearInterval(progressInterval);
+    btnClock.classList.add("clock-footer-btn-active");
+    btnClock.textContent = "Iniciar"; // Altera o texto do botão de volta para "Iniciar"
+    isTimerRunning = false; // Define que o temporizador não está mais em execução
+  };
+
+  const resetTimer = () => {
+    clearInterval(progressInterval);
+    timerValue =
+      pomodoroType == TIMER_TYPE_POMODORO
+        ? pomodoroTimerInSeconds
+        : shortBreakTimerInSeconds;
+
+    multiplierFactor = 360 / timerValue;
+
+    setClockTimerInfo();
+    stopTimer(); // Para o temporizador ao reiniciar
+  };
+
+  const handleStorePomodoroCount = () => {
+    let pomodoroCount = localStorage.getItem("pomodoroCount");
+
+    if (!pomodoroCount) {
+      pomodoroCount = 2;
+      localStorage.setItem("pomodoroCount", pomodoroCount);
+    } else {
+      pomodoroCount++;
+
+      localStorage.setItem("pomodoroCount", pomodoroCount);
     }
 
-    buttonTypePomodoro.addEventListener('click', () => setPomodoroType(TIMER_TYPE_POMODORO));
-    buttonTypeShortBreak.addEventListener('click', () => setPomodoroType(TIMER_TYPE_SHORT_BREAK));
+    pomodoroCountBtn.innerHTML = `#${pomodoroCount}`;
+  };
 
-    buttonStartTimer.addEventListener('click', () => {
-        if (isTimerRunning) {
-            stopTimer();
-        } else {
-            startTimer();
-        }
-    });
+  const setDocumentTitleInfo = () => {
+    let title = `${formatNumberInStringMinute(timerValue)}`;
+
+    if (pomodoroType == "POMODORO") {
+      title += " - Hora de focar!";
+    } else {
+      title += " - Hora de descanso!";
+    }
+
+    window.document.title = title;
+  };
+
+  const setClockTimerInfo = () => {
+    if (timerValue === 0) {
+      stopTimer();
+      return;
+    }
+
+    setDocumentTitleInfo();
+
+    clockTime.textContent = formatNumberInStringMinute(timerValue);
+  };
+
+  /**
+   * Troca o tipo do relogio de acordo com o botao clicado
+   */
+  const handleChangeClockType = (type) => {
+    pomodoroType = type;
+
+    if (type === TIMER_TYPE_POMODORO) {
+      btnPomodoroClock.classList.add("clock-header-btn-active");
+      btnShortBreakClock.classList.remove("clock-header-btn-active");
+    } else {
+      btnShortBreakClock.classList.add("clock-header-btn-active");
+      btnPomodoroClock.classList.remove("clock-header-btn-active");
+    }
+
+    resetTimer();
+  };
+
+  pomodoroCountBtn.addEventListener("click", () => {
+    const resetCounter = window.confirm(
+      "Deseja realmente reiniciar o contador?"
+    );
+
+    if (resetCounter) {
+      localStorage.setItem("pomodoroCount", 1);
+      pomodoroCountBtn.innerHTML = `#1`;
+    }
+  });
+
+  btnPomodoroClock.addEventListener("click", () =>
+    handleChangeClockType(TIMER_TYPE_POMODORO)
+  );
+
+  btnShortBreakClock.addEventListener("click", () =>
+    handleChangeClockType(TIMER_TYPE_SHORT_BREAK)
+  );
+
+  btnClock.addEventListener("click", () => {
+    if (isTimerRunning) {
+      stopTimer();
+    } else {
+      startTimer();
+    }
+  });
 });
 
 const handleCurrentMenu = () => {
-    const link = document.getElementById('link');
+  const link = document.getElementById("link");
 
-    link.className = 'menu-active'
-}
+  link.className = "menu-active";
+};
 
 const handleCanRenderMenuItem = () => {
-    const notationLink = document.getElementById('notation');
-    const profileLink = document.getElementById('profile');
-    const logginButton = document.getElementById('loggin-loggout')
-    const home = document.getElementById('home');
+  const notationLink = document.getElementById("notation");
+  const logginButton = document.getElementById("loggin-loggout");
+  const home = document.getElementById("home");
 
-    const hasUser = localStorage.getItem('userHasLogged');
+  const hasUser = localStorage.getItem("userHasLogged");
 
-    if (!hasUser) {
-        home.innerHTML = "<a href='Home/homeSemLogin.html'><i class='bi bi-house'></i>Home</a>"
-        profileLink.style.display = 'none';
-        notationLink.style.display = 'none';
-        logginButton.innerHTML = "<i class='bi bi-box-arrow-right'></i>Login</a>";
-    }
-}
+  if (!hasUser) {
+    home.innerHTML =
+      "<a href='Home/homeSemLogin.html'><i class='bi bi-house'></i>Home</a>";
+    notationLink.style.display = "none";
+    logginButton.innerHTML = "<i class='bi bi-box-arrow-right'></i>Login</a>";
+  }
+};
 
-handleCurrentMenu()
-handleCanRenderMenuItem()
+handleCurrentMenu();
+handleCanRenderMenuItem();

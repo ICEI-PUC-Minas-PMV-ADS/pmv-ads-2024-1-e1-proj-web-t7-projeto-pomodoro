@@ -1,136 +1,97 @@
+main{
+    height: 100%;
+    margin-bottom: 20px;
+}
+
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 16px;
 
     width: 100%;
     height: 100%;
     border-radius: 16px;
 }
 
-.card{
+.clock-container{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border-radius: 20px;
+    gap: 24px;
+    padding: 20px 40px;
     background: none;
+
+    width: 65%;
+    border-radius: 10px;
+    background-color: var(--branco-opaco);
 }
 
-.card-header{
-    width: 100%;
+.clock-header{
+    width: 60%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-}
-
-.card-header h1{
-    font-weight: 900;
-    font-size: 24px;
-    color: var(--branco);
-}
-
-.card-header-buttons{
-    display: flex;
     justify-content: center;
-    padding: 4px;
-    width: 100%;
-    border-radius: 12px;
     gap: 12px;
-    background-color: aliceblue;
 }
 
-.card-header-buttons button{
-    padding: 8px;
-    border-radius: 8px;
+.clock-header-btn{
+    padding: 4px 16px;
+    font-size: 1em;
     font-weight: 700;
-    font-size: 12px;
+    color:white;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: transparent;
-    border-radius: 10px;
+    background-color: inherit;
 }
 
-.card-header-buttons .active{
-    background-color: var(--vermelho);
-    color:rgba(100, 148, 237, 1);
-    background-color: rgba(100, 148, 237, 0.205);
-    border-radius: 10px;
+.clock-header-btn-active{
+    background-color: #0000004b;
 }
 
-.card-body{
+.clock-footer{
+    width: 60%;
+    
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 30px;
 }
 
-.progress-bar {
-    height: 180px;
-    width: 180px;
+.clock-footer-btn{
+    width: 60%;
+
+    cursor: pointer;
+    border: none;
+    padding: 0px 12px;
+    border-radius: 4px;
+    font-size: 22px;
+    height: 50px;
+    font-weight: bold;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+}
+
+.clock-footer-btn-active{
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+}
+
+.clock-body{
+    width: 60%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    animation: pulse 3s infinite;
-    transition: all ease;
-    box-shadow: rgb(254, 255, 255) 0px 0px 0px 2px, 
-                rgba(249, 250, 249, 0.65) 0px 4px 6px -1px, 
-                rgb(255, 255, 255) 0px 1px 0px inset;
+    font-size: 5em;
+    font-weight: 700;
+    color: white;
 }
 
-.progress-bar-inner {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: aliceblue;
-    border-radius: 50%;
-    box-shadow: rgba(247, 248, 247, 0.4) 0px 0px 0px 2px, 
-                rgba(251, 252, 252, 0.65) 0px 4px 6px -1px, 
-                rgb(254, 254, 253) 0px 1px 0px inset;
-}
-
-.progress-bar-inner h2 {
-    color: var(--cinzaFundo);
-    font-weight: 900;
-    font-size: 40px;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: stretch;
-    gap: 20px;
-    padding: 10px;
-}
-
-.card-footer button {
-    padding: 10px 28px;
-    border-radius: 8px;
-    background-color: aliceblue;
+.clock-pomodoro-count-btn{
+    background-color: inherit;
+    font-size: 1em;
+    color: white;
     font-weight: 600;
-    font-size: 14px;
+    letter-spacing: .2em;
     cursor: pointer;
-}
-
-
- @keyframes pulse {
-    0% {
-        transform: scale(0.97);
-        box-shadow: 0 0 0 0 rgba(100, 148, 237, 1);
-        
-    }
-    50% {
-        transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(53, 172, 224, 0);
-    }
-    100% {
-        transform: scale(0.97);
-        box-shadow: 0 0 0 0 rgba(53, 172, 224, 0);
-    }
 }

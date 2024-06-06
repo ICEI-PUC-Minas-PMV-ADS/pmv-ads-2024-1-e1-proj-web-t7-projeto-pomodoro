@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../assets/css/index.css" />
     <link rel="stylesheet" href="../assets/css/menu.css" />
     <link rel="stylesheet" href="../assets/css/clock.css" />
+    <link rel="stylesheet" href="../assets/css/task.css" />
   </head>
   <body>
     <header class="menu-page">
@@ -38,15 +39,9 @@
 
           <li class="menu-item">
             <a href="anotacoes.html">
-              <i class="bi bi-card-checklist"></i>Anotações
+              <i class="bi bi-card-checklist"></i>Tarefas
             </a>
           </li>
-
-          <!-- <li class="menu-item">
-            <a href="perfil/perfil.html">
-              <i class="bi bi-person-circle"></i>Perfil</a
-            >
-          </li> -->
 
           <li class="menu-item">
             <a onclick="logout();">
@@ -59,39 +54,85 @@
 
     <main>
       <div class="container">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-header-buttons">
-              <button
-                id="buttonTypePomodoro"
-                class="active"
-                onclick="setPomodoroType(TIMER_TYPE_POMODORO)"
-              >
-                Pomodoro
-              </button>
-              <button id="buttonTypeShortBreak">Pausa</button>
-            </div>
-            <div class="card-body">
-              <div id="circularProgressBar" class="progress-bar">
-                <div class="progress-bar-inner">
-                  <h2 class="progress-value">25:00</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
+        <div class="clock-container">
+          <div class="clock-header">
             <button
-              id="buttonStartTimer"
-              class="btn-iniciar"
-              onclick="startTimer();"
+              class="clock-header-btn clock-header-btn-active"
+              id="btnPomodoroClock"
+            >
+              Pomodoro
+            </button>
+            <button class="clock-header-btn" id="btnShortBreakClock">
+              Pausa
+            </button>
+          </div>
+
+          <div class="clock-body" id="clockTime">25:00</div>
+
+          <div class="clock-footer">
+            <button
+              class="clock-footer-btn clock-footer-btn-active"
+              id="btnClock"
             >
               Iniciar
             </button>
           </div>
         </div>
+
+        <div className="clock-pomodoro-count">
+          <button class="clock-pomodoro-count-btn" id="pomodoroCount">
+            #1
+          </button>
+        </div>
+
+        <div class="task-container" id="taskContainer"></div>
+
+        <div class="task-container">
+          <button
+            class="task-btn-add"
+            id="btnAddTask"
+            onclick="handleCreateTask();"
+          >
+            Adicionar Tarefa
+          </button>
+
+          <form
+            id="formToCreateTask"
+            class="task-form"
+            onsubmit="handleSubmitTask(event)"
+          >
+            <input
+              placeholder="O que você tem trabalhado?"
+              class="task-form-input"
+              name="taskName"
+              required
+            />
+
+            <div>
+              <p class="task-form-input-label">Pomodoros</p>
+              <input
+                placeholder="1"
+                class="task-form-input-number"
+                type="number"
+                min="1"
+                name="taskPomodoroQtd"
+                required
+              />
+            </div>
+
+            <div class="task-form-footer">
+              <button type="button" onclick="handleCancelTask();">
+                Cancelar
+              </button>
+
+              <button class="task-form-footer-btn" type="submit">Salvar</button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
 
+    <script src="../assets/js/task.js"></script>
     <script src="../assets/js/index.js"></script>
     <script src="../assets/js/auth.js"></script>
   </body>

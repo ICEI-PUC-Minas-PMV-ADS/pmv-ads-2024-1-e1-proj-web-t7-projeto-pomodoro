@@ -9,6 +9,7 @@
 
 :root{
     --branco: #F2F2F2;
+    --branco-opaco: #f2f2f22c;
     --cinzaFundo: #131426;
     --verdeclaro: #16F28B;
     --magenta: #343740;
@@ -36,6 +37,7 @@ body{
     gap: 32px;
     max-width: 790px;
     margin: 0 auto;
+    height: 100%;
 }
 
 main{

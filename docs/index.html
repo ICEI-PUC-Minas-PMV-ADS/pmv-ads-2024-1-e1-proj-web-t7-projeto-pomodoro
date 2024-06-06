@@ -45,49 +45,49 @@
 
     <main>
       <div class="container">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-header-buttons">
-              <button
-                id="buttonTypePomodoro"
-                class="active"
-                onclick="setPomodoroType(TIMER_TYPE_POMODORO)"
-              >
-                Pomodoro
-              </button>
-              <button id="buttonTypeShortBreak">Pausa</button>
-            </div>
-            <div class="card-body">
-              <div id="circularProgressBar" class="progress-bar">
-                <div class="progress-bar-inner">
-                  <h2 class="progress-value">25:00</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
+        <div class="clock-container">
+          <div class="clock-header">
             <button
-              id="buttonStartTimer"
-              class="btn-iniciar"
-              onclick="startTimer();"
+              class="clock-header-btn clock-header-btn-active"
+              id="btnPomodoroClock"
+            >
+              Pomodoro
+            </button>
+            <button class="clock-header-btn" id="btnShortBreakClock">
+              Pausa
+            </button>
+          </div>
+
+          <div class="clock-body" id="clockTime">25:00</div>
+
+          <div class="clock-footer">
+            <button
+              class="clock-footer-btn clock-footer-btn-active"
+              id="btnClock"
             >
               Iniciar
             </button>
           </div>
-
-          <h2
-            style="
-              color: white;
-              opacity: 0.7;
-              font-weight: 300;
-              font-size: 12px;
-              letter-spacing: 0.1em;
-              margin-top: 1em;
-            "
-          >
-            *Faça login para utilizar todos os benefícios
-          </h2>
         </div>
+
+        <div className="clock-pomodoro-count">
+          <button class="clock-pomodoro-count-btn" id="pomodoroCount">
+            #1
+          </button>
+        </div>
+
+        <h2
+          style="
+            color: white;
+            opacity: 0.7;
+            font-weight: 300;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            margin-top: 1em;
+          "
+        >
+          *Faça login para utilizar todos os benefícios
+        </h2>
       </div>
     </main>
 

@@ -1,14 +1,45 @@
 
-section .notation-card{
+.tasks-filter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.select-field{
     width: 200px;
-    min-height: 200px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+    border-collapse: collapse;
+}
+
+.tasks-container{
+    margin-top: 20px;
+
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: start;
+}
+
+.notation-card{
+    width: 230px;
+    min-height: 100px;
     border-radius: 12px;
     background-color: aliceblue;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     transition: all .4s ease-in-out;
     position: relative;
+
+    animation: fadeIn .4s ease-in-out;
 }
 
 .notation-card-title{
@@ -39,14 +70,13 @@ section .notation-card{
     font-size: 1rem;
     width: 100%;
     flex: 1;
-    padding: 4px 0;
     color:rgb(121, 120, 120);
     font-size: .95em;
     line-height: .95em;
     z-index: 99999;
     background-color: aliceblue;
     border-radius: 20px 0 0 0;
-    padding: 8px;
+    padding: 16px 8px;
 }
 
 .notation-card-footer{

@@ -53,49 +53,40 @@
     </header>
 
     <main>
-      <!-- <section class="container">
-        <div class="notation-card">
-          <div class="notation-card-title">Slogan para minha loja</div>
-
-          <div class="notation-card-content">
-            Tempo que destinei para criação do slogan para minha loja
-          </div>
-
-          <div class="notation-card-footer">
-            <div class="notation-card-footer-statistic">
-              <i class="bi bi-hourglass-split"></i>
-              25:00
-            </div>
-
-            <button type="button" class="notation-card-footer-btn">
-              <i class="bi bi-pencil-square"></i>
-            </button>
-          </div>
+      <div class="container">
+        <div class="tasks-filter">
+          <select
+            class="select-field"
+            id="selectField"
+            onchange="handleGenerateTasks(event?.target?.value)"
+          >
+            <option value="">Status</option>
+            <option value="true">Finalizada</option>
+            <option value="false">Pendente</option>
+          </select>
         </div>
 
-        <div class="notation-card">
-          <div class="notation-card-title">Analise Literária</div>
+        <div class="tasks-container" id="tasksContainer"></div>
+      </div>
 
-          <div class="notation-card-content">
-            Tempo que destinei para analise literaria de Memórias Póstumas de
-            Brás Cubas, de Machado de Assis
+      <!-- <div class="notation-card">
+        <div class="notation-card-title">Slogan para minha loja</div>
+
+        <div class="notation-card-footer">
+          <div class="notation-card-footer-statistic">
+            <i class="bi bi-hourglass-split"></i>
+            25:00
           </div>
 
-          <div class="notation-card-footer">
-            <div class="notation-card-footer-statistic">
-              <i class="bi bi-hourglass-split"></i>
-              50:00
-            </div>
-
-            <button type="button" class="notation-card-footer-btn">
-              <i class="bi bi-pencil-square"></i>
-            </button>
-          </div>
+          <button type="button" class="notation-card-footer-btn">
+            <i class="bi bi-pencil-square"></i>
+          </button>
         </div>
-      </section> -->
+      </div> -->
     </main>
 
     <script src="../assets/js/auth.js"></script>
     <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/anotacoes.js"></script>
   </body>
 </html>

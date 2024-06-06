@@ -80,10 +80,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let activeTask = tasks?.find((task) => task?.active);
 
-    if (activeTask && hasUser) {
+    if (activeTask) {
       const noActiveTasks = tasks?.filter((task) => !task?.active);
 
       if (activeTask?.taskPomodoro == Number(activeTask?.taskPomodoroQtd)) {
+        activeTask = {
+          ...activeTask,
+          active: false,
+          finished: true,
+        };
+
+        localStorage.setItem("pomodoroCount", 1);
+      } else if (
+        activeTask?.taskPomodoro + 1 ==
+        Number(activeTask?.taskPomodoroQtd)
+      ) {
         activeTask = {
           ...activeTask,
           active: false,

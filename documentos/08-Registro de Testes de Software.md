@@ -10,14 +10,14 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Resultado obtido | Funcionalidade de contagem do tempo funcionou sem apresentar falhas.|
 | Avaliação (pegou / não pegou erro) | RE = RO: Não pegou erro.|
 | Responsável pela execução do caso de Teste | Pablo de Araujo Santos |
-| Evidência (print screen) |![alt text](image-1.png)|
+| Evidência (print screen) | |
 
 |Caso de Teste    | CT 002 – Função de cadastro |
 |:---|:---|
 | Resultado obtido | Funcionalidade de cadastro funcionou conforme o esperado sem apresentar falhas.|
 | Avaliação (pegou / não pegou erro) | RE = RO: Não pegou erro.|
 | Responsável pela execução do caso de Teste | Pablo de Araujo Santos |
-| Evidência (print screen) |![alt text](image-2.png)|
+| Evidência (print screen) | |
 
 |Caso de Teste    | CT 003 – Login válido |
 |:---|:---|
@@ -45,14 +45,14 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Resultado obtido | Funcionalidade para salvar ciclos de tarefa funcionou conforme o esperado sem apresentar falhas.|
 | Avaliação (pegou / não pegou erro) | RE = RO: Não pegou erro.|
 | Responsável pela execução do caso de Teste | Pablo de Araujo Santos |
-| Evidência (print screen) |![alt text](image-7.png)|
+| Evidência (print screen) | |
 
 |Caso de Teste    | CT 007 – Acessar histórico de ciclos |
 |:---|:---|
 | Resultado obtido | Funcionalidade para acessar os ciclos de tarefa funcionou conforme o esperado sem apresentar falhas.|
 | Avaliação (pegou / não pegou erro) | RE = RO: Não pegou erro.|
 | Responsável pela execução do caso de Teste | Pablo de Araujo Santos |
-| Evidência (print screen) |![alt text](image-4.png)|
+| Evidência (print screen) | |
 
 |Caso de Teste    | CT 008 – Iniciar novo ciclo após salvar histórico |
 |:---|:---|

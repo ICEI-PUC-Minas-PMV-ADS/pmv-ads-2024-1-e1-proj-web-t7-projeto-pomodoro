@@ -43,7 +43,7 @@ Os testes serão realizados manualmente e de forma automatizada utilizando ferra
 |:---|:---|
 | Pré-condições | •	O usuário deve ter acesso à internet; e<br>• O usuário deve estar logado.|
 | Procedimento (passo à passo) | 1 - Navegar para o campo “Adicionar Tarefa”, abaixo do relógio pomodoro;<br>2 - Inserir o título da tarefa;<br>3 - Definir a quantidade de ciclos (por exemplo, 3 ciclos); e<br>4 - Salvar as configurações.|
-| Dados de entrada |• Quantidade de ciclos: 3;|
+| Dados de entrada |• Quantidade de ciclos: 2;|
 | Resultado esperado |• As configurações devem ser salvas com sucesso;|
 
 

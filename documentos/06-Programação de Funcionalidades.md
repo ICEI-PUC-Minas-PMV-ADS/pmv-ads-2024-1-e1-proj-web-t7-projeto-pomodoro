@@ -4,7 +4,7 @@
 
 <img src="img/CT001.png" width="500">
 
-<img src="img/layout/tarefa.png" width="500">
+<img src="img/layout/tarefa.png" width="550">
 
 
 #### Requisito atendido
@@ -63,7 +63,7 @@ usuário irá usar as informações de: e-mail e senha utilizadas para realizar 
 
 ### Cadastro de usuário
 
-<img src="img/CT007.png" width="500">
+<img src="img/CT007.png" width="550">
 
 
 #### Ciclos Pomodoros salvos

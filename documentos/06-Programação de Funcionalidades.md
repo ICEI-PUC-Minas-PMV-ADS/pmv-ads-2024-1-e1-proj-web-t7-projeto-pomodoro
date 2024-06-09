@@ -46,7 +46,6 @@ usuário irá preencher as informações de: nome, e-mail e senha para realizar 
 
 <img src="img/layout/login.png" width="500">
 
-
 #### Requisito atendido
 
 * RF-02	O “Pomodoro” deve permitir que o usuário acesse uma conta cadastrada.

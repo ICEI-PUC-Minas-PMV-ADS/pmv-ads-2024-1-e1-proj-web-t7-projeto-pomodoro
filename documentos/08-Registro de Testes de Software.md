@@ -24,21 +24,21 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Resultado obtido | Funcionalidade de login funcionou conforme o esperado sem apresentar falhas.|
 | Avaliação (pegou / não pegou erro) | RE = RO: Não pegou erro.|
 | Responsável pela execução do caso de Teste | Pablo de Araujo Santos |
-| Evidência (print screen) |<video src="img/CT003.mp4"></video>|
+| Evidência (print screen) |<video width="640" height="480" controls><source src="img/CT003.mp4" type="video/mp4"></video>|
 
 |Caso de Teste    | CT 004 – Login inválido |
 |:---|:---|
 | Resultado obtido | Funcionalidade de login inválido funcionou conforme o esperado sem apresentar falhas.|
 | Avaliação (pegou / não pegou erro) | RE = RO: Não pegou erro.|
 | Responsável pela execução do caso de Teste | Pablo de Araujo Santos |
-| Evidência (print screen) | |
+| Evidência (print screen) |<video width="640" height="480" controls><source src="img/CT004.mp4" type="video/mp4"></video>|
 
 |Caso de Teste    | CT 005 – Definir quantidade de ciclos |
 |:---|:---|
 | Resultado obtido | Funcionalidade de definição de ciclos da tarefa funcionou conforme o esperado sem apresentar falhas.|
 | Avaliação (pegou / não pegou erro) | RE = RO: Não pegou erro.|
 | Responsável pela execução do caso de Teste | Pablo de Araujo Santos |
-| Evidência (print screen) | |
+| Evidência (print screen) |<video width="640" height="480" controls><source src="img/CT005.mp4" type="video/mp4"></video>|
 
 |Caso de Teste    | CT 006 – Salvar ciclos no histórico do usuário |
 |:---|:---|
@@ -59,4 +59,4 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Resultado obtido | Funcionalidade para salvar ciclos de tarefa funcionou conforme o esperado sem apresentar falhas.|
 | Avaliação (pegou / não pegou erro) | RE = RO: Não pegou erro.|
 | Responsável pela execução do caso de Teste | Pablo de Araujo Santos |
-| Evidência (print screen) | |
+| Evidência (print screen) |<video width="640" height="480" controls><source src="img/CT008.mp4" type="video/mp4"></video>|

@@ -2,7 +2,8 @@
 
 ### Relógio Pomodoro
 
-<img src="img/CT001.png" width="500"><br>
+<img src="img/CT001.png" width="500">
+<br>
 <img src="img/layout/tarefa.png" width="500">
 
 

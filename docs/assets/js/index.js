@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //   const audio = new Audio("alarme.mp3");
 
-  const pomodoroTimerInSeconds = 1;
-  const shortBreakTimerInSeconds = 1;
+  const pomodoroTimerInSeconds = 1500;
+  const shortBreakTimerInSeconds = 300;
   const TIMER_TYPE_POMODORO = "POMODORO";
   const TIMER_TYPE_SHORT_BREAK = "SHORTBREAK";
 

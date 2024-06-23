@@ -4,7 +4,7 @@
 
 <img src="img/CT001.png" width="500">
 
-<img src="img/layout/tarefa.png" width="550">
+![tarefa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/assets/162591442/662c0e6d-cc3b-44ca-b5a6-ebcbd7928e6f)
 
 
 #### Requisito atendido
@@ -45,7 +45,7 @@ usuário irá preencher as informações de: nome, e-mail e senha para realizar 
 
 ### login de usuário
 
-<img src="img/layout/login.png" width="500">
+![login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-pomodoro/assets/162591442/ea226377-c9e3-4974-bfd4-992178411ad3)
 
 #### Requisito atendido
 

@@ -43,7 +43,7 @@ O usuário poderá configurar os ciclos pomodoros de 25 minutos com intervalo de
 
 usuário irá preencher as informações de: nome, e-mail e senha para realizar o cadastro, após isso ele é direcionado para a página inicial para usar o relógio Pomodoro.
 
-### Cadastro de usuário
+### login de usuário
 
 <img src="img/layout/login.png" width="500">
 
@@ -61,7 +61,7 @@ usuário irá preencher as informações de: nome, e-mail e senha para realizar 
 
 usuário irá usar as informações de: e-mail e senha utilizadas para realizar o cadastro.
 
-### Cadastro de usuário
+### Ciclos pomodoro salvos
 
 <img src="img/CT007.png" width="550">
 
